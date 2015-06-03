@@ -1,26 +1,115 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 25-05-2015, 01:06:50 PM
-    Author     : Alvaro
-*/
 body{
-    background: #ccffff;
+    background: #999999;
+    //padding: 5em;
+}
+//FORM LOGIN***********************************************************************
+.cajalogin{
+    background: #D5CABF;
+    border: 2px solid #fff;
+    width: -moz-fit-content;    
+    width: -webkit-fit-content;
+    width: fit-content;
+    margin: auto; 
+    // -moz- : mozila; -webkit- Chrome, zafari , android, ios; -o- opera; -ms- Iexplorer
+    // filt contenct, min content, max content 
 }
 
-.login{
-    background: #50a3a2;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 400px;
+.Login{
+    padding: 25px 25px;
+    background: #cccccc;
+    width: -moz-fit-content;    
+    width: -webkit-fit-content;
+    width: fit-content;
+    margin: auto;
+    border: 2px solid #fff;
 }
 
+//MENU INICIAL***********************************************************************
 form {
-  padding: 20px 0;
-  position: relative;
-  z-index: 2;
+  padding: 25px 25px;
+}
+
+ul { 
+    list-style-type: none;
+}
+ul li.nivel1 { 
+    float: left;
+    width: 162px;
+    margin-right: 2px;
+}
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #666;
+    border: solid 1px #fff;
+    padding: 8px;
+    position: relative;
+}
+ul li:hover {
+    position: relative;
+}
+ul li a:hover, #menu ul li:hover a.nivel1 {
+    background-color: #888;
+    color: #000;
+    position: relative;
+}
+
+ul li ul {
+    display: none;
+}
+ul li a:hover ul, #menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: -40px;
+}
+ul li ul li a {
+    width: 160px;
+    padding: 6px 0px 8px 0px;
+    border-top-color: #000;
+}
+ul li ul li a:hover {
+    border-top-color: #000;
+    position: relative;
+}
+nav{
+    width: -webkit-fit-content;
+    margin: 0 auto;
+}
+
+
+//REGISTROS NIÑOS***********************************************************************
+
+
+.registroNino{
+    margin: auto;
+    width: -moz-fit-content;    
+    width: -webkit-fit-content;
+    width: fit-content;
+    text-align: center;
+    padding: auto;
+    justify-content: center; /* align horizontal */
+}
+.cajaRegNino1{
+    border: 2px solid #fff;
+    padding: 25px 25px;
+    background: #cccccc;
+    width: -moz-fit-content;    
+    width: -webkit-fit-content;
+    margin: 10px 5px;
+    float: left;  
+}
+
+.cajaRegNino2{
+   clear: both;
+   background: #888;
+   text-align: center;
+   width: -moz-fit-content;    
+   width: -webkit-fit-content;
+   margin: 0 auto;
+}
+
+#guardarNino{
+    width:150px; 
+    height:40px;
 }
